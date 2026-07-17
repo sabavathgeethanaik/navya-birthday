@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>A Special Gift ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Floating Hearts -->
+<div id="hearts"></div>
+
+<!-- Stars -->
+<div class="stars"></div>
+
+<section class="welcome-page">
+
+<div class="glass-box">
+
+<div class="gift">
+
+🎁
+
+</div>
+
+<h3>
+
+A Secret Birthday Gift
+
+</h3>
+
+<h1>
+
+For Someone Very Special ❤️
+
+</h1>
+
+<p>
+
+Before we begin...
+
+Tell me...
+
+Who is this surprise for?
+
+</p>
+
+<input
+type="password"
+id="password"
+placeholder="Enter the magic word...">
+
+<br>
+
+<button onclick="checkPassword()">
+
+🎀 Open My Gift
+
+</button>
+
+<p id="message"></p>
+
+</div>
+
+</section>
+
+<script>
+
+function checkPassword(){
+
+let pass=document.getElementById("password").value;
+
+let msg=document.getElementById("message");
+
+if(pass.toLowerCase()=="navya"){
+
+msg.style.color="#7CFC00";
+
+msg.innerHTML="✨ Welcome Birthday Girl ❤️";
+
+setTimeout(function(){
+
+window.location="chapter1.html";
+
+},1500);
+
+}
+
+else{
+
+msg.style.color="#ff8080";
+
+msg.innerHTML="🥺 Oops... That's not the magic word.<br>Hint: It's your name ❤️";
+
+}
+
+}
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

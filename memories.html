@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Favorite Moments ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        .cinema {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .video-card {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(8px);
+        }
+
+        .video-header {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        /* First Video (Portrait) */
+        .video-small {
+            width: 260px;
+            height: 460px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Second Video (Landscape) */
+        .video-horizontal {
+            width: 420px;
+            height: 240px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .video-card p {
+            color: white;
+            margin-top: 15px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        @media (max-width:768px) {
+            .video-small {
+                width: 220px;
+                height: 390px;
+            }
+
+            .video-horizontal {
+                width: 95%;
+                height: auto;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="hearts"></div>
+    <div class="stars"></div>
+
+    <section class="video-page">
+
+        <h3>🎬 Chapter Three</h3>
+
+        <h1>Our Favorite Moments ❤️</h1>
+
+        <p class="subtitle">
+            Some memories deserve more than a photo...
+            <br>
+            They deserve to be watched again and again.
+        </p>
+
+        <div class="cinema">
+
+            <!-- Video 1 -->
+            <div class="video-card">
+
+                <div class="video-header">
+                    🎥 Memory One
+                </div>
+
+                <video class="video-small"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+
+                    <source src="videos/video1.mp4" type="video/mp4">
+
+                </video>
+
+                <p>
+                    Every time I watch this,
+                    <br>
+                    it reminds me how lucky I am
+                    <br>
+                    to have such beautiful memories.
+                    ❤️
+                </p>
+
+            </div>
+
+            <!-- Video 2 -->
+            <div class="video-card">
+
+                <div class="video-header">
+                    🎥 Memory Two
+                </div>
+
+                <video class="video-horizontal"
+                    autoplay
+                    muted
+                    loop
+                    playsinline>
+
+                    <source src="videos/video2.mp4" type="video/mp4">
+
+                </video>
+
+                <p>
+                    Some moments pass in seconds,
+                    <br>
+                    but stay in our hearts forever.
+                    ✨
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="movie-quote">
+            🎞️
+            <br><br>
+            "Life isn't measured by the number of days...
+            <br>
+            but by the moments that take our breath away."
+            <br><br>
+            🎞️
+        </div>
+
+        <div class="next-area">
+
+            <a href="letter.html" class="next-btn">
+                Open My Letter 💌 →
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
